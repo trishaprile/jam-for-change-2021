@@ -4,20 +4,20 @@
 
 .pretitle {
     font-weight: 600;
-    font-size: 24px;
+    font-size: 20px;
     padding-top: 4em;
     color: #4D4D4D;
 }
 
 .main-title {
-    font-weight: 800;
+    font-weight: 700;
     font-size: 48px;
     color: #387CA0;
 }
 
 .dates {
-    font-weight: 600;
-    font-size: 26px;
+    font-weight: 500;
+    font-size: 22px;
     color: #4D4D4D;
 }
 
@@ -26,10 +26,10 @@
 }
 
 .register-btn {
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: 5s00;
+    font-size: 18px;
     color: white;
-    padding: 0.5em 1em;
+    padding: 15px 25px;
     border-radius: 40px;
     background: linear-gradient(270deg, #387CA0 0%, #0F8C2A 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
