@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
-import './App.css';
 
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
+
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+import './App.css';
 
 import globe from './img/globe.png';
 
@@ -29,17 +32,41 @@ class App extends Component {
         </Container>
         <Container className="info">
           <div className="about">
-            <h3>ICS Student Council at UC Irvine invites you to our 2021 Jam for Change!</h3>
+            <h3 className="about-title">ICS Student Council at UC Irvine invites you to our 2021 Jam for Change!</h3>
             <p>Jam for Change is five day long development competition where teams work together to create applications that promote social good.</p>
             <div className="schedule">
-              <h2>EVENT SCHEDULE</h2>
-              <p>Kickoff Ceremony & Workshop @ Monday 5-6 PM PST</p>
-              <p>Presentations & Award Ceremony @ 5-6 PM PST</p>
+              <h2 className="schedule-title">Event Schedule</h2>
+              <VerticalTimeline className="vertical-timeline.vertical-timeline-custom-line">
+                <VerticalTimelineElement
+                  className="vertical-timeline-element--work"
+                  contentStyle={{ background: '#387CA0', color: '#fff' }}
+                  contentArrowStyle={{ borderRight: '7px solid #387CA0' }}
+                  date="Monday, February 15th"
+                  iconStyle={{ background: 'linear-gradient(270deg, #387CA0 0%, #0F8C2A 100%)', color: '#fff' }}
+                >
+                  <h3 className="vertical-timeline-element-title">Kickoff Ceremony & Workshop</h3>
+                  <p>
+                    5:00-6:00pm PST
+                  </p>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                  className="vertical-timeline-element--work"
+                  contentStyle={{ background: '#387CA0', color: '#fff' }}
+                  contentArrowStyle={{ borderRight: '7px solid #387CA0' }}
+                  date="Friday, February 19th"
+                  iconStyle={{ background: 'linear-gradient(270deg, #387CA0 0%, #0F8C2A 100%)', color: '#fff' }}
+                >
+                  <h3 className="vertical-timeline-element-title">Presentations & Award Ceremony</h3>
+                  <p>
+                    5:00-6:00pm PST
+                  </p>
+                </VerticalTimelineElement>
+              </VerticalTimeline>
             </div>
           </div>
           <div className="faq">
-            <h2>FAQs & Rules</h2>
-            <Accordion style={{padding: "3rem"}}>
+            <h2 className="faq-title">FAQ & Rules</h2>
+            <Accordion>
               <Card>
                 <Accordion.Toggle className="hover-primary" as={Card.Header} eventKey="0">
                   What is Jam for Change?
@@ -159,6 +186,9 @@ class App extends Component {
               </Card>
             </Accordion>
           </div>
+          <footer>
+            <p>© 2020 ICSSC Projects Commitee</p>
+          </footer>
         </Container>
       </div>
     )

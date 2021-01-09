@@ -6,7 +6,7 @@
 .pretitle {
     font-weight: 600;
     font-size: 20px;
-    padding-top: 4em;
+    padding-top: 6em;
     color: #4D4D4D;
 }
 
@@ -97,16 +97,49 @@
     padding-top: 5em;
 }
 
+.about-title {
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 1em;
+}
+
 .schedule {
     padding-top: 5em;
 }
 
+.schedule-title {
+    font-size: 32px;
+    font-weight: 600;
+    padding-bottom: 1em;
+}
+
 .faq {
-    padding-top: 5em;
+    padding-top: 10em;
+    padding-bottom: 10em;
+}
+
+.faq-title {
+    font-size: 32px;
+    font-weight: 600;
+    padding-bottom: 1em;
 }
 
 h2 {
     text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 3em;
+    color: #212529;
+}
+
+.vertical-timeline.vertical-timeline-custom-line::before {
+    background: #424242;
+  }
+
+.vertical-timeline-element-title {
+    font-size: 26px;
 }
 
 @keyframes moveInBottom {
