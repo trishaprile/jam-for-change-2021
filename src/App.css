@@ -13,12 +13,14 @@
 .main-title {
     font-weight: 700;
     font-size: 48px;
+    padding-top: 0.5em;
     color: #387CA0;
 }
 
 .dates {
     font-weight: 500;
     font-size: 22px;
+    padding-top: 1em;
     color: #4D4D4D;
 }
 
@@ -27,7 +29,7 @@
 }
 
 .register-btn {
-    font-weight: 5s00;
+    font-weight: 500;
     font-size: 18px;
     color: white;
     padding: 15px 25px;
