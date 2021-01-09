@@ -24,7 +24,7 @@ class App extends Component {
           </h3>
           <img src={globe} alt="globe" className="globe-img"></img>
           <div className="register-container">
-            <a href="https://forms.gle/VogasEdHYQsn7QYT6" target="_blank" rel="noreferrer"><Button className="register-btn">Register Now</Button></a>
+            <a href="https://forms.gle/VogasEdHYQsn7QYT6" target="_blank" rel="noreferrer"><Button className="btn">REGISTER NOW!</Button></a>
           </div>
         </Container>
         <Container className="info">
