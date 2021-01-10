@@ -12,6 +12,7 @@ import Card from 'react-bootstrap/Card';
 
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 
+import icssc_logo from './img/icssc_logo_transparent.png';
 import globe from './img/globe.png';
 
 class App extends Component {
@@ -19,6 +20,7 @@ class App extends Component {
     return (
       <div className="app">
         <Container className="landing-container">
+          <a href="https://studentcouncil.ics.uci.edu/" target="_blank" rel="noreferrer"><img src={icssc_logo} alt="icssc logo" className="icssc-logo"></img></a>
           <h2 className="pretitle">
             UC Irvine ICS Student Council
           </h2>
@@ -41,7 +43,7 @@ class App extends Component {
               <h2 className="schedule-title">Event Schedule</h2>
               <VerticalTimeline className="vertical-timeline">
                 <VerticalTimelineElement
-                  className="vertical-timeline-element"
+                  className="vertical-timeline-element-one"
                   contentStyle={{ background: '#387CA0', color: '#fff' }}
                   contentArrowStyle={{ borderRight: '7px solid #387CA0' }}
                   date="Monday, February 15th"
@@ -54,9 +56,9 @@ class App extends Component {
                   </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
-                  className="vertical-timeline-element"
-                  contentStyle={{ background: '#387CA0', color: '#fff' }}
-                  contentArrowStyle={{ borderRight: '7px solid #387CA0' }}
+                  className="vertical-timeline-element-two"
+                  contentStyle={{ background: '#0F8C2A', color: '#fff' }}
+                  contentArrowStyle={{ borderRight: '7px solid #0F8C2A' }}
                   date="Friday, February 19th"
                   dateClassName='vertical-timeline-date'
                   iconStyle={{ background: '#fff' }}
@@ -72,7 +74,7 @@ class App extends Component {
           <div className="faq">
             <h2 className="faq-title">FAQ & Rules</h2>
             <Accordion>
-              <Card>
+              <Card className="faq-card">
                 <Accordion.Toggle className="hover-primary" as={Card.Header} eventKey="0">
                   What is Jam for Change?
                 </Accordion.Toggle>
@@ -80,7 +82,7 @@ class App extends Component {
                   <Card.Body>Jam for Change is five day long development competition where teams work together to create applications that promote social good.</Card.Body>
                 </Accordion.Collapse>
               </Card>
-              <Card>
+              <Card className="faq-card">
                 <Accordion.Toggle className="hover-green" as={Card.Header} eventKey="1">
                   Where is Jam for Change being held?
                 </Accordion.Toggle>
@@ -88,7 +90,7 @@ class App extends Component {
                   <Card.Body>Jam for Change is held entirely online this year. Correspondence and announcements throughout the duration of the event will happen primarily through the Jam for Change Discord. Registered participants will receive an invitation to Jam for Change Discord closer to the start date of Jam for Change.</Card.Body>
                 </Accordion.Collapse>
               </Card>
-              <Card>
+              <Card className="faq-card">
                 <Accordion.Toggle className="hover-yellow" as={Card.Header} eventKey="2">
                   When is Jam for Change?
                 </Accordion.Toggle>
@@ -96,7 +98,7 @@ class App extends Component {
                   <Card.Body>Jam for Change is happening between February 15th-19th.</Card.Body>
                 </Accordion.Collapse>
               </Card>
-              <Card>
+              <Card className="faq-card">
                 <Accordion.Toggle className="hover-orange" as={Card.Header} eventKey="3">
                   How much does it cost?
                 </Accordion.Toggle>
@@ -104,7 +106,7 @@ class App extends Component {
                   <Card.Body>Nothing. Attending Jam for Change is free.</Card.Body>
                 </Accordion.Collapse>
               </Card>
-              <Card>
+              <Card className="faq-card">
                 <Accordion.Toggle className="hover-red" as={Card.Header} eventKey="4">
                   Who can participate?
                 </Accordion.Toggle>
@@ -112,7 +114,7 @@ class App extends Component {
                   <Card.Body>All UC Irvine students are welcome to participate.</Card.Body>
                 </Accordion.Collapse>
               </Card>
-              <Card>
+              <Card className="faq-card">
                 <Accordion.Toggle className="hover-primary" as={Card.Header} eventKey="5">
                   How many people can be on a team?
                 </Accordion.Toggle>
@@ -120,7 +122,7 @@ class App extends Component {
                   <Card.Body>Teams can be up to a maximum of 4 people.</Card.Body>
                 </Accordion.Collapse>
               </Card>
-              <Card>
+              <Card className="faq-card">
                 <Accordion.Toggle className="hover-green" as={Card.Header} eventKey="6">
                   What if I don’t have a team?
                 </Accordion.Toggle>
@@ -128,7 +130,7 @@ class App extends Component {
                   <Card.Body>We will be assisting with team formations during the event by creating a Discord channel for team formations.</Card.Body>
                 </Accordion.Collapse>
               </Card>
-              <Card>
+              <Card className="faq-card">
                 <Accordion.Toggle className="hover-yellow" as={Card.Header} eventKey="7">
                   How do I register?
                 </Accordion.Toggle>
@@ -136,7 +138,7 @@ class App extends Component {
                   <Card.Body>You can register by filling out the following RSVP form above.</Card.Body>
                 </Accordion.Collapse>
               </Card>
-              <Card>
+              <Card className="faq-card">
                 <Accordion.Toggle className="hover-orange" as={Card.Header} eventKey="8">
                   May I submit pre-existing projects for Jam for Change?
                 </Accordion.Toggle>
@@ -144,7 +146,7 @@ class App extends Component {
                   <Card.Body>Unfortunately, all design elements and code for your project must be created during the event. Pre-existing third party tools and frameworks are allowed. Coding in advance is not allowed, but planning and discussing with teammates prior to the event is allowed.</Card.Body>
                 </Accordion.Collapse>
               </Card>
-              <Card>
+              <Card className="faq-card">
                 <Accordion.Toggle className="hover-primary" as={Card.Header} eventKey="10">
                   What if my question isn’t answered here?
                 </Accordion.Toggle>
@@ -152,7 +154,7 @@ class App extends Component {
                   <Card.Body>If your question isn’t answered in the FAQ, please leave a question in the Jam for Change Discord or email us at <a href="mailto:icssc@uci.edu">icssc@uci.edu</a></Card.Body>
                 </Accordion.Collapse>
               </Card>
-              <Card>
+              <Card className="faq-card">
                 <Accordion.Toggle className="hover-green" as={Card.Header} eventKey="11">
                   What are the rules?
                 </Accordion.Toggle>
@@ -168,7 +170,7 @@ class App extends Component {
                           <li>Submissions must be your own original work, and you must have obtained approval or licenses required for you to submit your entry, and your entry cannot contain any third party trademarks or copyrighted materials unless you have obtained permission to use the materials.</li>
                           <li>Submissions must, as determined by ICS Student Council, in our sole and absolute discretion, follow the code of conduct.</li>
                           <li>By participating in Jam for Change, you agree to grant full permission to ICS Student Council to use your likeness in all forms and media for advertising and any other lawful purposes. </li>
-                          <li>Teams will be required to submit a hyperlink or code repository (GitHub, GitLab) of their submission before final presentations by Friday October 23rd, 2020 @ 5:30 PM PDT to be eligible for prizes.</li>
+                          <li>Teams will be required to submit a hyperlink or code repository (GitHub, GitLab) of their submission before final presentations by Friday February 19th, 2021 @ 4:30 PM PST to be eligible for prizes.</li>
                           <li>Teams will be required to present their project in a 3-5 minute presentation to a panel of judges during the final Jam for Change presentations in order to qualify for prizes. At least one team member must be present to present their project during their team’s assigned presentation time.</li>
                           <li>At the close of the Jam for Change Presentations, the top three winning teams will be selected by a panel of qualified judges. </li>
                           <li>Winners will be notified via the contact information provided during entry. If a selected winner cannot be contacted, is ineligible for, fails to claim a prize, or fails to return any forms, the selected winner will forfeit the prize.</li>
@@ -192,7 +194,7 @@ class App extends Component {
             </Accordion>
           </div>
           <footer>
-            <p>© 2020 ICSSC Projects Commitee</p>
+            <p>© 2021 ICSSC Projects Committee</p>
           </footer>
         </Container>
       </div>
