@@ -1,6 +1,19 @@
+html, body {
+    font-family: 'Poppins', 'Arial', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    height: 100vh;
+}
+
 .landing-container {
     text-align: center;
-    height: 100vh;
+    height: 100%;
+    animation-duration: 5000ms;
+    animation-name: fadeIn;
 }
 
 .pretitle {
@@ -92,15 +105,33 @@
     animation-fill-mode: backwards;
 }
 
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
 .about {
     text-align: center;
     padding-top: 5em;
+    height: 100vh;
 }
 
 .about-title {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
     padding-bottom: 1em;
+}
+
+.about-text {
+    font-size: 18px;
+    padding: 0 10%;
 }
 
 .schedule {
@@ -111,6 +142,24 @@
     font-size: 32px;
     font-weight: 600;
     padding-bottom: 1em;
+}
+
+.vertical-timeline::before {
+    background: linear-gradient(180deg, #387CA0 0%, #0F8C2A 100%);
+    width: 6px;
+    border-radius: 20px;
+}
+
+.vertical-timeline-element-title {
+    font-size: 26px;
+}
+
+.vertical-timeline-date {
+    color: #4D4D4D;
+}
+
+.vertical-timeline .vertical-timeline-element .vertical-timeline-element-icon {
+    box-shadow: 0 0 0 6px #0F8C2A, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 
 .faq {
@@ -132,24 +181,4 @@ footer {
     text-align: center;
     padding-bottom: 3em;
     color: #212529;
-}
-
-.vertical-timeline.vertical-timeline-custom-line::before {
-    background: #424242;
-  }
-
-.vertical-timeline-element-title {
-    font-size: 26px;
-}
-
-@keyframes moveInBottom {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
 }
