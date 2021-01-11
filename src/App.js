@@ -19,8 +19,8 @@ class App extends Component {
   render() {
     return (
       <div className="app">
+        <a href="https://studentcouncil.ics.uci.edu/" target="_blank" rel="noreferrer"><img src={icssc_logo} alt="ICSSC logo" className="icssc-logo-header"></img></a>
         <Container className="landing-container">
-          <a href="https://studentcouncil.ics.uci.edu/" target="_blank" rel="noreferrer"><img src={icssc_logo} alt="icssc logo" className="icssc-logo"></img></a>
           <h2 className="pretitle">
             UC Irvine ICS Student Council
           </h2>
@@ -44,31 +44,28 @@ class App extends Component {
               <VerticalTimeline className="vertical-timeline">
                 <VerticalTimelineElement
                   className="vertical-timeline-element-one"
-                  contentStyle={{ background: '#387CA0', color: '#fff' }}
-                  contentArrowStyle={{ borderRight: '7px solid #387CA0' }}
+                  contentStyle={{ background: '#387CA0', color: '#fff', borderRadius: '20px' }}
+                  contentArrowStyle={{ borderRight: '8px solid #387CA0' }}
                   date="Monday, February 15th"
                   dateClassName='vertical-timeline-date'
                   iconStyle={{ background: '#fff' }}
                 >
                   <h3 className="vertical-timeline-element-title">Kickoff Ceremony & Workshop</h3>
-                  <p>
-                    5:00-6:00pm PST
-                  </p>
+                  <p>5:00-6:00pm PST</p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                   className="vertical-timeline-element-two"
-                  contentStyle={{ background: '#0F8C2A', color: '#fff' }}
-                  contentArrowStyle={{ borderRight: '7px solid #0F8C2A' }}
+                  contentStyle={{ background: '#237e37', color: '#fff', borderRadius: '20px' }}
+                  contentArrowStyle={{ borderRight: '8px solid #237e37' }}
                   date="Friday, February 19th"
                   dateClassName='vertical-timeline-date'
                   iconStyle={{ background: '#fff' }}
                 >
                   <h3 className="vertical-timeline-element-title">Presentations & Award Ceremony</h3>
-                  <p>
-                    5:00-6:00pm PST
-                  </p>
+                  <p>5:00-6:00pm PST</p>
                 </VerticalTimelineElement>
               </VerticalTimeline>
+              <p className="more-events">More events TBA!</p>
             </div>
           </div>
           <div className="faq">
@@ -194,6 +191,7 @@ class App extends Component {
             </Accordion>
           </div>
           <footer>
+            <a href="https://studentcouncil.ics.uci.edu/" target="_blank" rel="noreferrer"><img src={icssc_logo} alt="icssc logo" className="icssc-logo-footer"></img></a>
             <p>© 2021 ICSSC Projects Committee</p>
           </footer>
         </Container>

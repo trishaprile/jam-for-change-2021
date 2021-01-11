@@ -4,17 +4,17 @@ html, body {
     width: 100%;
     margin: 0;
     padding: 0;
+    color: #212529;
 }
 
 .landing-container {
     text-align: center;
     height: 100vh;
-    padding: 0;
     animation-duration: 5000ms;
     animation-name: fadeIn;
 }
 
-.icssc-logo {
+.icssc-logo-header {
     width: 80px;
     height: auto;
     float: left;
@@ -25,7 +25,6 @@ html, body {
     font-weight: 600;
     font-size: 20px;
     padding-top: 5em;
-    color: #4D4D4D;
 }
 
 .main-title {
@@ -39,7 +38,6 @@ html, body {
     font-weight: 500;
     font-size: 22px;
     padding-top: 1em;
-    color: #4D4D4D;
 }
 
 .globe-img {
@@ -152,7 +150,7 @@ html, body {
 }
 
 .vertical-timeline::before {
-    background: linear-gradient(180deg, #387CA0 0%, #0F8C2A 100%);
+    background: linear-gradient(180deg, #387CA0 0%, #237e37 100%);
     width: 6px;
     border-radius: 20px;
 }
@@ -162,7 +160,7 @@ html, body {
 }
 
 .vertical-timeline-date {
-    color: #4D4D4D;
+    color: #212529;
     margin: 0em 2em;
 }
 
@@ -171,7 +169,13 @@ html, body {
 }
 
 .vertical-timeline-element-two .vertical-timeline-element-icon {
-    box-shadow: 0 0 0 6px #0F8C2A, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 0 6px #237e37, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.more-events {
+    font-size: 16px;
+    padding-top: 3em;
+    text-align: center;
 }
 
 .faq {
@@ -194,5 +198,10 @@ html, body {
 footer {
     text-align: center;
     padding-bottom: 3em;
-    color: #212529;
+}
+
+.icssc-logo-footer {
+    width: 120px;
+    height: auto;
+    padding-bottom: 1em;
 }
