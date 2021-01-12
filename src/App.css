@@ -197,8 +197,14 @@ html, body {
 }
 
 .chevron-icon {
-    transform: rotate(0deg);
     margin-right: 1em;
+    transition: all 0.5s;
+}
+
+.chevron-icon-open {
+    transform: rotate(90deg);
+    margin-right: 1em;
+    transition: all 0.5s;
 }
 
 .faq-card-header {
