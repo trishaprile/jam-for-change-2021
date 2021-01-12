@@ -122,7 +122,6 @@ html, body {
 
 .about {
     padding-top: 5em;
-    height: 100vh;
 }
 
 .about-title {
@@ -179,8 +178,7 @@ html, body {
 }
 
 .faq {
-    padding-top: 10em;
-    padding-bottom: 10em;
+    padding: 10em 2em;
 }
 
 .faq-title {
@@ -191,8 +189,24 @@ html, body {
 }
 
 .faq-card {
+    font-size: 18px;
     border: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
+    border-radius: 20px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+}
+
+.chevron-icon {
+    transform: rotate(0deg);
+    margin-right: 1em;
+}
+
+.faq-card-header {
+    background: #fff;
+}
+
+.faq-card-body {
+    background: white;
 }
 
 footer {
