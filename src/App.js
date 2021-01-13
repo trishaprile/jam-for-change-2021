@@ -9,6 +9,8 @@ import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import { ChevronRight } from 'react-bootstrap-icons';
 
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
@@ -197,7 +199,7 @@ function App() {
                 <ChevronRight className={accordion8 === false ? "chevron-icon" : "chevron-icon-open"}/>How do I register?
               </Accordion.Toggle>
               <Accordion.Collapse eventKey="7">
-                <Card.Body className="faq-card-body">You can register by filling out the following RSVP form above.</Card.Body>
+                <Card.Body className="faq-card-body">You can register by filling out the <a href="https://docs.google.com/forms/d/e/1FAIpQLScs4CTQGtOYQJdWNB0ok4hG38lDfhXG7U1zzRDtkLkKESn09A/viewform">Registration Form</a>.</Card.Body>
               </Accordion.Collapse>
             </Card>
           </Accordion>
@@ -228,34 +230,36 @@ function App() {
               </Accordion.Toggle>
               <Accordion.Collapse eventKey="10">
                 <Card.Body className="faq-card-body">
-                  <div style={{display: "flex", flexDirection: "row"}}>
-                    <div style={{display: "flex", width: "50%", flexDirection: "column", paddingRight: "2rem"}}>
-                      <h3>Jam for Change Rules </h3>
-                      <ul>
-                        <li>Teams must be a size of 1-4 participants.</li>
-                        <li>Participants must be currently enrolled UC Irvine students.</li>
-                        <li>All design elements and code for your project must be created during the event. Pre-existing third-party tools and frameworks are allowed. Coding in advance is not allowed, but planning and discussing with teammates prior to the event is allowed.</li>
-                        <li>Submissions must be your own original work, and you must have obtained approval or licenses required for you to submit your entry, and your entry cannot contain any third party trademarks or copyrighted materials unless you have obtained permission to use the materials.</li>
-                        <li>Submissions must, as determined by ICS Student Council, in our sole and absolute discretion, follow the code of conduct.</li>
-                        <li>By participating in Jam for Change, you agree to grant full permission to ICS Student Council to use your likeness in all forms and media for advertising and any other lawful purposes. </li>
-                        <li>Teams will be required to submit a hyperlink or code repository (GitHub, GitLab) of their submission before final presentations by Friday February 19th, 2021 @ 4:30 PM PST to be eligible for prizes.</li>
-                        <li>Teams will be required to present their project in a 3-5 minute presentation to a panel of judges during the final Jam for Change presentations in order to qualify for prizes. At least one team member must be present to present their project during their team’s assigned presentation time.</li>
-                        <li>At the close of the Jam for Change Presentations, the top three winning teams will be selected by a panel of qualified judges. </li>
-                        <li>Winners will be notified via the contact information provided during entry. If a selected winner cannot be contacted, is ineligible for, fails to claim a prize, or fails to return any forms, the selected winner will forfeit the prize.</li>
-                      </ul>
-                    </div>
-                    <div style={{display: "flex", width: "50%",  flexDirection: "column", paddingLeft: "2rem"}}>
-                      <h3>Jam for Change Code of Conduct</h3>
-                      <p>By participating in Jam for Change, you agree to abide by the the following code of conduct:</p>
-                      <ul>
-                        <li>Jam for Change is dedicated to providing a harassment-free environment experience for everyone, regardless of gender, age, sexual orientation, disability, physical appearance, body size, race, religion, or computing experience. If your behavior is making someone feel uncomfortable, that is enough reason to stop. We do not tolerate harassment of Jam for Change participants of any form. </li>
-                        <li>Participants asked to stop any harassing behavior are expected to comply immediately.</li>
-                        <li>If a participant engages in harassing behavior, ICS Student Council may take any action it deems appropriate, including, but not limited to, warning the offending participant or expulsion from the event.</li>
-                        <li>If you witness or experience any violations of this Code of Conduct, please notify a board member of ICS Student Council immediately, or email icssc@uci.edu</li>
-                      </ul>
-                      <p>By participating in Jam for Change, each participant agrees to follow the above-stated rules and code of conduct and by the interpretation of these rules by ICS Student Council, and understand that violation of these rules may result in their submission being disqualified for prizes and/or the offending participant being removed from the competition.</p>                   
-                    </div>
-                  </div>
+                  <Container>
+                    <Row>
+                      <Col xs={12} md={6}>
+                        <h3>Jam for Change Rules</h3>
+                        <ul>
+                          <li>Teams must be a size of 1-4 participants.</li>
+                          <li>Participants must be currently enrolled UC Irvine students.</li>
+                          <li>All design elements and code for your project must be created during the event. Pre-existing third-party tools and frameworks are allowed. Coding in advance is not allowed, but planning and discussing with teammates prior to the event is allowed.</li>
+                          <li>Submissions must be your own original work, and you must have obtained approval or licenses required for you to submit your entry, and your entry cannot contain any third party trademarks or copyrighted materials unless you have obtained permission to use the materials.</li>
+                          <li>Submissions must, as determined by ICS Student Council, in our sole and absolute discretion, follow the code of conduct.</li>
+                          <li>By participating in Jam for Change, you agree to grant full permission to ICS Student Council to use your likeness in all forms and media for advertising and any other lawful purposes. </li>
+                          <li>Teams will be required to submit a hyperlink or code repository (GitHub, GitLab) of their submission before final presentations by Friday February 19th, 2021 @ 4:30 PM PST to be eligible for prizes.</li>
+                          <li>Teams will be required to present their project in a 3-5 minute presentation to a panel of judges during the final Jam for Change presentations in order to qualify for prizes. At least one team member must be present to present their project during their team’s assigned presentation time.</li>
+                          <li>At the close of the Jam for Change Presentations, the top three winning teams will be selected by a panel of qualified judges. </li>
+                          <li>Winners will be notified via the contact information provided during entry. If a selected winner cannot be contacted, is ineligible for, fails to claim a prize, or fails to return any forms, the selected winner will forfeit the prize.</li>
+                        </ul>
+                      </Col>
+                      <Col xs={12} md={6}>
+                        <h3>Jam for Change Code of Conduct</h3>
+                        <p>By participating in Jam for Change, you agree to abide by the the following code of conduct:</p>
+                        <ul>
+                          <li>Jam for Change is dedicated to providing a harassment-free environment experience for everyone, regardless of gender, age, sexual orientation, disability, physical appearance, body size, race, religion, or computing experience. If your behavior is making someone feel uncomfortable, that is enough reason to stop. We do not tolerate harassment of Jam for Change participants of any form. </li>
+                          <li>Participants asked to stop any harassing behavior are expected to comply immediately.</li>
+                          <li>If a participant engages in harassing behavior, ICS Student Council may take any action it deems appropriate, including, but not limited to, warning the offending participant or expulsion from the event.</li>
+                          <li>If you witness or experience any violations of this Code of Conduct, please notify a board member of ICS Student Council immediately, or email icssc@uci.edu</li>
+                        </ul>
+                        <p>By participating in Jam for Change, each participant agrees to follow the above-stated rules and code of conduct and by the interpretation of these rules by ICS Student Council, and understand that violation of these rules may result in their submission being disqualified for prizes and/or the offending participant being removed from the competition.</p>   
+                      </Col>
+                    </Row>
+                  </Container>
                 </Card.Body>
               </Accordion.Collapse>
             </Card>
