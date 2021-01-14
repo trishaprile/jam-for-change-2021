@@ -219,7 +219,7 @@ function App() {
                 <ChevronRight className={accordion10 === false ? "chevron-icon" : "chevron-icon-open"}/>What if my question isn’t answered here?
               </Accordion.Toggle>
               <Accordion.Collapse eventKey="9">
-                <Card.Body className="faq-card-body">If your question isn’t answered in the FAQ, please leave a question in the Jam for Change Discord or email us at <a href="mailto:icssc@uci.edu">icssc@uci.edu</a></Card.Body>
+                <Card.Body className="faq-card-body">If your question isn’t answered in the FAQ, please leave a question in the Jam for Change Discord or email us at <a href="mailto:icssc@uci.edu">icssc@uci.edu</a>.</Card.Body>
               </Accordion.Collapse>
             </Card>
           </Accordion>
