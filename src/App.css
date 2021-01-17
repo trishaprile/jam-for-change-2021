@@ -217,6 +217,7 @@ html, body {
 
 .faq-card-body {
     background: white;
+    padding-left: 3em;
 }
 
 footer {
