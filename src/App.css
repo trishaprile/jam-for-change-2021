@@ -211,6 +211,10 @@ html, body {
     background: #fff;
 }
 
+.faq-card-header:hover {
+    cursor:pointer;
+}
+
 .faq-card-body {
     background: white;
 }
