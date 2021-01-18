@@ -103,7 +103,7 @@ function App() {
                 dateClassName='vertical-timeline-date'
                 iconStyle={{ background: '#fff' }}
               >
-                <h3 className="vertical-timeline-element-title">Kickoff Ceremony & Workshop</h3>
+                <h3 className="vertical-timeline-element-title">Kickoff Ceremony</h3>
                 <p>5:00-6:00pm PST</p>
               </VerticalTimelineElement>
               <VerticalTimelineElement
