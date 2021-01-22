@@ -222,9 +222,35 @@ html, body {
     padding-left: 3em;
 }
 
+.special-thanks {
+    text-align: center;
+    padding-bottom: 10em;
+}
+
+.special-thanks-title {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.ctc-logo {
+    width: 600px;
+    cursor: pointer; 
+    transition:transform 0.5s;
+    transform: scale(0.5, 0.5);
+}
+
+.ctc-logo:hover {
+    transform: scale(0.6);
+}
+
+.ctc-title {
+    font-size: 24px;
+    margin-top: -1em;
+}
+
 footer {
     text-align: center;
-    padding-bottom: 3em;
+    padding-bottom: 2em;
 }
 
 .icssc-logo-footer {
