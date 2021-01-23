@@ -266,11 +266,11 @@ function App() {
             </Card>
           </Accordion>
         </Container>
-      </div>
-      <div className="special-thanks">
-        <h2 className="special-thanks-title">Special Thanks To</h2>
-        <a href="https://ctc-uci.com/" target="_blank" rel="noreferrer"><img src={ctc_logo} alt="commit the change logo" className="ctc-logo"></img></a>
-        <h3 className="ctc-title">Commit the Change</h3>
+        <Container className="special-thanks">
+          <h2 className="special-thanks-title">Special Thanks To</h2>
+          <a href="https://ctc-uci.com/" target="_blank" rel="noreferrer"><img src={ctc_logo} alt="commit the change logo" className="ctc-logo"></img></a>
+          <h3 className="ctc-title">Commit the Change</h3>
+        </Container>
       </div>
       <footer>
         <a href="https://studentcouncil.ics.uci.edu/" target="_blank" rel="noreferrer"><img src={icssc_logo} alt="icssc logo" className="icssc-logo-footer"></img></a>
