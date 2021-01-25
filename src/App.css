@@ -95,7 +95,7 @@ html, body {
 .main-title {
     font-weight: 700;
     font-size: 60px;
-    padding-top: 0.5em;
+    padding-top: 1em;
     color: white;
 }
 
@@ -111,83 +111,19 @@ html, body {
 }
 
 .btn {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
-    color: white;
-    padding: 20px 40px;
+    color: #43B0F1;
+    padding: 15px 30px;
     border-radius: 40px;
-    background: linear-gradient(270deg, #387CA0 0%, #0F8C2A 100%);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: white;
     border: none;
     margin-top: 7em; 
 }
 
-.btn:link,
-.btn:visited {
-    text-decoration: none;
-    padding: 15px 40px;
-    display: inline-block;
-    border-radius: 100px;
-    transition: all .2s;
-    position: absolute;
-}
-
-.btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.btn:active {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.btn-white {
-    background-color: #fff;
-    color: #777;
-}
-
-.btn::after {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 100px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all .4s;
-}
-
-.btn-white::after {
-    background-color: #fff;
-}
-
-.btn:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
-}
-
-.btn-animated {
-    animation: moveInBottom 3s ease-out;
-    animation-fill-mode: backwards;
-}
-
-@keyframes moveInBottom {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-
 .about {
     padding-top: 5em;
+    padding-bottom: 5em;
 }
 
 .about-title {
@@ -215,7 +151,7 @@ html, body {
 }
 
 .vertical-timeline::before {
-    background: linear-gradient(180deg, #387CA0 0%, #237e37 100%);
+    background: linear-gradient(180deg, #F62600 0%, #FFA135 100%);
     width: 6px;
     border-radius: 20px;
 }
@@ -230,11 +166,11 @@ html, body {
 }
 
 .vertical-timeline-element-one .vertical-timeline-element-icon {
-    box-shadow: 0 0 0 6px #387CA0, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 0 6px #F62600, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 
 .vertical-timeline-element-two .vertical-timeline-element-icon {
-    box-shadow: 0 0 0 6px #237e37, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 0 6px #FFA135, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 
 .more-events {
@@ -244,7 +180,12 @@ html, body {
 }
 
 .faq {
-    padding: 10em 2em;
+    background: #5f534f;
+    color: white;
+}
+
+.faq-container {
+    padding: 5em 2em;
 }
 
 .faq-title {
@@ -259,7 +200,6 @@ html, body {
     border: 0;
     margin-bottom: 1em;
     border-radius: 20px;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
     animation-duration: 3000ms;
     animation-name: fadeIn;
 }
@@ -276,7 +216,7 @@ html, body {
 }
 
 .faq-card-header {
-    background: #fff;
+    background: #75625c;
 }
 
 .faq-card-header:hover {
@@ -284,7 +224,7 @@ html, body {
 }
 
 .faq-card-body {
-    background: white;
+    background: #75625c;
     padding-left: 3em;
 }
 

@@ -96,10 +96,10 @@ function App() {
             UC Irvine ICS Student Council
           </h2>
           <h1 className="main-title">
-            Jam for Change 2021
+            Jam for Change
           </h1>
           <h3 className="dates">
-            February 15th - 19th
+            February 15th - 19th, 2021
           </h3>
           <div className="register-container">
             <a href="https://forms.gle/VogasEdHYQsn7QYT6" target="_blank" rel="noreferrer"><Button className="btn">REGISTER NOW!</Button></a>
@@ -115,8 +115,8 @@ function App() {
             <VerticalTimeline className="vertical-timeline">
               <VerticalTimelineElement
                 className="vertical-timeline-element-one"
-                contentStyle={{ background: '#387CA0', color: '#fff', borderRadius: '20px' }}
-                contentArrowStyle={{ borderRight: '8px solid #387CA0' }}
+                contentStyle={{ background: '#F62600', color: '#fff', borderRadius: '20px' }}
+                contentArrowStyle={{ borderRight: '8px solid #F62600' }}
                 date="Monday, February 15th"
                 dateClassName='vertical-timeline-date'
                 iconStyle={{ background: '#fff' }}
@@ -126,8 +126,8 @@ function App() {
               </VerticalTimelineElement>
               <VerticalTimelineElement
                 className="vertical-timeline-element-two"
-                contentStyle={{ background: '#237e37', color: '#fff', borderRadius: '20px' }}
-                contentArrowStyle={{ borderRight: '8px solid #237e37' }}
+                contentStyle={{ background: '#FFA135', color: '#fff', borderRadius: '20px' }}
+                contentArrowStyle={{ borderRight: '8px solid #FFA135' }}
                 date="Friday, February 19th"
                 dateClassName='vertical-timeline-date'
                 iconStyle={{ background: '#fff' }}
@@ -139,7 +139,9 @@ function App() {
             <p className="more-events">More events TBA!</p>
           </div>
         </Container>
-        <Container className="faq">
+      </div>
+      <div className="faq">
+        <Container className="faq-container">
           <h2 className="faq-title">FAQ & Rules</h2>
           <Accordion>
             <Card className="faq-card">
@@ -288,11 +290,11 @@ function App() {
           <a href="https://ctc-uci.com/" target="_blank" rel="noreferrer"><img src={CTC_Logo} alt="commit the change logo" className="ctc-logo"></img></a>
           <h3 className="ctc-title">Commit the Change</h3>
         </Container>
+        <footer>
+          <a href="https://studentcouncil.ics.uci.edu/" target="_blank" rel="noreferrer"><img src={ICSSC_Logo} alt="icssc logo" className="icssc-logo-footer"></img></a>
+          <p>© 2021 ICSSC Projects Committee</p>
+        </footer>
       </div>
-      <footer>
-        <a href="https://studentcouncil.ics.uci.edu/" target="_blank" rel="noreferrer"><img src={ICSSC_Logo} alt="icssc logo" className="icssc-logo-footer"></img></a>
-        <p>© 2021 ICSSC Projects Committee</p>
-      </footer>
     </div>
   )
 }
