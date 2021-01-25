@@ -15,9 +15,13 @@ import { ChevronRight } from 'react-bootstrap-icons';
 
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 
-import icssc_logo from './img/icssc_logo_transparent.png';
-import globe from './img/globe.png';
-import ctc_logo from './img/purple_ctc.png';
+import Background from './img/Background.svg';
+import LeftBuilding from './img/LeftBuilding.svg';
+import MiddlePeopleAnteaters from './img/MiddlePeopleAnteaters.svg';
+import RightBuilding from './img/RightBuilding.svg';
+import Earth from './img/Earth.svg';
+import ICSSC_Logo from './img/icssc_logo_transparent.png';
+import CTC_Logo from './img/purple_ctc.png';
 
 function App() {
 
@@ -72,7 +76,7 @@ function App() {
   return (
     <div className="app">
       <div className="landing">
-        <a href="https://studentcouncil.ics.uci.edu/" target="_blank" rel="noreferrer"><img src={icssc_logo} alt="ICSSC logo" className="icssc-logo-header"></img></a>
+        <a href="https://studentcouncil.ics.uci.edu/" target="_blank" rel="noreferrer"><img src={ICSSC_Logo} alt="ICSSC logo" className="icssc-logo-header"></img></a>
         <Container className="landing-container">
           <h2 className="pretitle">
             UC Irvine ICS Student Council
@@ -83,7 +87,6 @@ function App() {
           <h3 className="dates">
             Feb 15th - Feb 19th
           </h3>
-          <img src={globe} alt="globe" className="globe-img"></img>
           <div className="register-container">
             <a href="https://forms.gle/VogasEdHYQsn7QYT6" target="_blank" rel="noreferrer"><Button className="btn">REGISTER NOW!</Button></a>
           </div>
@@ -268,12 +271,12 @@ function App() {
         </Container>
         <Container className="special-thanks">
           <h2 className="special-thanks-title">Special Thanks To</h2>
-          <a href="https://ctc-uci.com/" target="_blank" rel="noreferrer"><img src={ctc_logo} alt="commit the change logo" className="ctc-logo"></img></a>
+          <a href="https://ctc-uci.com/" target="_blank" rel="noreferrer"><img src={CTC_Logo} alt="commit the change logo" className="ctc-logo"></img></a>
           <h3 className="ctc-title">Commit the Change</h3>
         </Container>
       </div>
       <footer>
-        <a href="https://studentcouncil.ics.uci.edu/" target="_blank" rel="noreferrer"><img src={icssc_logo} alt="icssc logo" className="icssc-logo-footer"></img></a>
+        <a href="https://studentcouncil.ics.uci.edu/" target="_blank" rel="noreferrer"><img src={ICSSC_Logo} alt="icssc logo" className="icssc-logo-footer"></img></a>
         <p>© 2021 ICSSC Projects Committee</p>
       </footer>
     </div>
