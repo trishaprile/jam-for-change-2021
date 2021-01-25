@@ -20,7 +20,7 @@ import LeftBuilding from './img/LeftBuilding.svg';
 import MiddlePeopleAnteaters from './img/MiddlePeopleAnteaters.svg';
 import RightBuilding from './img/RightBuilding.svg';
 import Earth from './img/Earth.svg';
-import ICSSC_Logo from './img/icssc_logo_transparent.png';
+import ICSSC_Logo from './img/icssc_logo_transparent_bright.png';
 import CTC_Logo from './img/purple_ctc.png';
 
 function App() {
@@ -76,6 +76,20 @@ function App() {
   return (
     <div className="app">
       <div className="landing">
+        <div className='background-container'>
+          <div className="sky-background">
+            <img src={Background} alt="Background" className="background"/>
+          </div>
+          <div className="left-building-container">
+            <img src={LeftBuilding} alt="Background" className="left-building"/>
+          </div>
+          <div className="middle-people-anteaters-container">
+            <img src={MiddlePeopleAnteaters} alt="Background" className="middle-people-anteaters"/>
+          </div>
+          <div className="right-building-container">
+            <img src={RightBuilding} alt="Background" className="right-building"/>
+          </div>
+        </div>
         <a href="https://studentcouncil.ics.uci.edu/" target="_blank" rel="noreferrer"><img src={ICSSC_Logo} alt="ICSSC logo" className="icssc-logo-header"></img></a>
         <Container className="landing-container">
           <h2 className="pretitle">
@@ -85,7 +99,7 @@ function App() {
             Jam for Change 2021
           </h1>
           <h3 className="dates">
-            Feb 15th - Feb 19th
+            February 15th - 19th
           </h3>
           <div className="register-container">
             <a href="https://forms.gle/VogasEdHYQsn7QYT6" target="_blank" rel="noreferrer"><Button className="btn">REGISTER NOW!</Button></a>

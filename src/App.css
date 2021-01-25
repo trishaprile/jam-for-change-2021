@@ -7,6 +7,70 @@ html, body {
     color: #212529;
 }
 
+.landing {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.sky-background
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.left-building-container {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 80%;
+    height: 80%;
+}
+
+.middle-people-anteaters-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.right-building-container {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 70%;
+    height: 70%;
+}
+
+.left-building {
+    width: 100%;
+    height: 100%;
+}
+
+.middle-people-anteaters {
+    width: 100%;
+    height: 100%;
+}
+
+.right-building {
+    width: 100%;
+    height: 100%;
+}
+
 .landing-container {
     text-align: center;
     height: 100vh;
@@ -15,7 +79,7 @@ html, body {
 }
 
 .icssc-logo-header {
-    width: 80px;
+    width: 100px;
     height: auto;
     float: left;
     margin: 0.5em;
@@ -23,21 +87,23 @@ html, body {
 
 .pretitle {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 24px;
     padding-top: 5em;
+    color: white;
 }
 
 .main-title {
     font-weight: 700;
-    font-size: 48px;
+    font-size: 60px;
     padding-top: 0.5em;
-    color: #387CA0;
+    color: white;
 }
 
 .dates {
     font-weight: 500;
-    font-size: 22px;
+    font-size: 28px;
     padding-top: 1em;
+    color: white;
 }
 
 .globe-img {
@@ -53,11 +119,11 @@ html, body {
     background: linear-gradient(270deg, #387CA0 0%, #0F8C2A 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: none;
+    margin-top: 7em; 
 }
 
 .btn:link,
 .btn:visited {
-    text-transform: uppercase;
     text-decoration: none;
     padding: 15px 40px;
     display: inline-block;
