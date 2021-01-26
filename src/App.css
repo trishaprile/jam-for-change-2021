@@ -9,9 +9,7 @@ html, body {
 
 .landing {
     height: 100vh;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    display: flex;
 }
 
 .background-container {
@@ -22,60 +20,79 @@ html, body {
     height: 100%;
     overflow: hidden;
     z-index: -1;
+    background-image: url('./img/Background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
 }
 
-.sky-background
-{
+.sky-background-container {
+    height: 100vh;
+}
+
+.ground-container {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
+    bottom: 0;
+    margin-bottom: -1px;
+    height: 5vw;
 }
 
 .left-building-container {
     position: absolute;
+    width: 20vw;
+    height: auto;
     left: 0;
     bottom: 0;
-    width: 80%;
-    height: 80%;
+}
+
+.background {
+    height: 100%;
+    background-position: center bottom;
+}
+
+.ground {
+    height: 100%;
 }
 
 .middle-people-anteaters-container {
     position: absolute;
+    width: 35vw;
+    height: auto;
     bottom: 0;
-    width: 100%;
-    height: 100%;
+    left: 50%;
+    transform: translate(-50%, 0%);
 }
 
 .right-building-container {
     position: absolute;
+    width: 25vw;
+    height: auto;
     right: 0;
     bottom: 0;
-    width: 70%;
-    height: 70%;
 }
 
 .left-building {
     width: 100%;
-    height: 100%;
+    padding-bottom: 3vw;
 }
 
 .middle-people-anteaters {
     width: 100%;
-    height: 100%;
+    padding-bottom: 2vw;
 }
 
 .right-building {
     width: 100%;
-    height: 100%;
+    padding-bottom: 3vw;
 }
 
-.landing-container {
+.landing-text-container {
     text-align: center;
-    height: 100vh;
-    animation-duration: 5000ms;
+    animation-duration: 2000ms;
     animation-name: fadeIn;
+    margin: auto;
+    margin-top: 15vh;
+    padding: 0;
 }
 
 .icssc-logo-header {
@@ -83,20 +100,21 @@ html, body {
     height: auto;
     float: left;
     margin: 0.5em;
+    position: absolute;
 }
 
 .pretitle {
     font-weight: 600;
     font-size: 24px;
-    padding-top: 5em;
     color: white;
 }
 
 .main-title {
     font-weight: 700;
-    font-size: 60px;
+    font-size: 72px;
     padding-top: 1em;
     color: white;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .dates {
@@ -112,35 +130,44 @@ html, body {
 
 .btn {
     font-weight: 600;
-    font-size: 16px;
-    color: #43B0F1;
+    font-size: 20px;
+    color: #0080E9;
     padding: 15px 30px;
     border-radius: 40px;
-    background: white;
+    background: rgba(255, 255, 255, 0.8);
     border: none;
-    margin-top: 7em; 
+    margin-top: 6vh; 
 }
 
-.about {
+.about-container {
     padding-top: 5em;
     padding-bottom: 5em;
 }
 
+.about-row {
+    display: flex;
+    align-items: center;
+}
+
 .about-title {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 600;
     padding-bottom: 1em;
-    text-align: center;
+    text-align: left;
 }
 
 .about-text {
-    font-size: 18px;
-    padding: 0 10%;
-    text-align: center;
+    font-size: 20px;
+    text-align: left;
 }
 
-.schedule {
+.earth {
+    width: 300px;
+}
+
+.schedule-container {
     padding-top: 5em;
+    padding-bottom: 5em;
 }
 
 .schedule-title {
@@ -180,7 +207,7 @@ html, body {
 }
 
 .faq {
-    background: #5f534f;
+    background: linear-gradient(180deg, #49c4e8 0%, #0080E9 100%);
     color: white;
 }
 
@@ -193,6 +220,7 @@ html, body {
     font-weight: 600;
     padding-bottom: 1em;
     text-align: center;
+    color: white;
 }
 
 .faq-card {
@@ -200,8 +228,9 @@ html, body {
     border: 0;
     margin-bottom: 1em;
     border-radius: 20px;
-    animation-duration: 3000ms;
+    animation-duration: 1000ms;
     animation-name: fadeIn;
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .chevron-icon {
@@ -216,7 +245,7 @@ html, body {
 }
 
 .faq-card-header {
-    background: #75625c;
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .faq-card-header:hover {
@@ -224,7 +253,7 @@ html, body {
 }
 
 .faq-card-body {
-    background: #75625c;
+    background: rgba(255, 255, 255, 0.2);
     padding-left: 3em;
 }
 
@@ -239,7 +268,7 @@ html, body {
 }
 
 .ctc-logo {
-    width: 600px;
+    width: 50vh;
     cursor: pointer; 
     transition:transform 0.5s;
     transform: scale(0.5, 0.5);
@@ -260,7 +289,19 @@ footer {
 }
 
 .icssc-logo-footer {
-    width: 120px;
+    width: 150px;
     height: auto;
     padding-bottom: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+    .pretitle {
+        font-size: 20px;
+    }
+    .main-title {
+        font-size: 60px;
+    }
+    .dates {
+        font-size: 24px;
+    }
 }

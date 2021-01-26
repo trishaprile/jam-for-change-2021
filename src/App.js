@@ -16,12 +16,13 @@ import { ChevronRight } from 'react-bootstrap-icons';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 
 import Background from './img/Background.svg';
+import Ground from './img/Ground.svg';
 import LeftBuilding from './img/LeftBuilding.svg';
 import MiddlePeopleAnteaters from './img/MiddlePeopleAnteaters.svg';
 import RightBuilding from './img/RightBuilding.svg';
 import Earth from './img/Earth.svg';
-import ICSSC_Logo from './img/icssc_logo_transparent_bright.png';
-import CTC_Logo from './img/purple_ctc.png';
+import ICSSC_Logo from './img/icssc_logo_white.png';
+import CTC_Logo from './img/ctc-logo.svg';
 
 function App() {
 
@@ -77,8 +78,8 @@ function App() {
     <div className="app">
       <div className="landing">
         <div className='background-container'>
-          <div className="sky-background">
-            <img src={Background} alt="Background" className="background"/>
+          <div className="ground-container">
+            <img src={Ground} alt="Ground" className="ground"/>
           </div>
           <div className="left-building-container">
             <img src={LeftBuilding} alt="Background" className="left-building"/>
@@ -91,7 +92,7 @@ function App() {
           </div>
         </div>
         <a href="https://studentcouncil.ics.uci.edu/" target="_blank" rel="noreferrer"><img src={ICSSC_Logo} alt="ICSSC logo" className="icssc-logo-header"></img></a>
-        <Container className="landing-container">
+        <Container className="landing-text-container">
           <h2 className="pretitle">
             UC Irvine ICS Student Council
           </h2>
@@ -107,37 +108,44 @@ function App() {
         </Container>
       </div>
       <div className="info">
-        <Container className="about">
-          <h3 className="about-title">ICS Student Council at UC Irvine invites you to our 2021 Jam for Change!</h3>
-          <p className="about-text">Jam for Change is five day long development competition where teams work together to create applications that promote social good.</p>
-          <div className="schedule">
-            <h2 className="schedule-title">Event Schedule</h2>
-            <VerticalTimeline className="vertical-timeline">
-              <VerticalTimelineElement
-                className="vertical-timeline-element-one"
-                contentStyle={{ background: '#F62600', color: '#fff', borderRadius: '20px' }}
-                contentArrowStyle={{ borderRight: '8px solid #F62600' }}
-                date="Monday, February 15th"
-                dateClassName='vertical-timeline-date'
-                iconStyle={{ background: '#fff' }}
-              >
-                <h3 className="vertical-timeline-element-title">Kickoff Ceremony</h3>
-                <p>5:00-6:00pm PST</p>
-              </VerticalTimelineElement>
-              <VerticalTimelineElement
-                className="vertical-timeline-element-two"
-                contentStyle={{ background: '#FFA135', color: '#fff', borderRadius: '20px' }}
-                contentArrowStyle={{ borderRight: '8px solid #FFA135' }}
-                date="Friday, February 19th"
-                dateClassName='vertical-timeline-date'
-                iconStyle={{ background: '#fff' }}
-              >
-                <h3 className="vertical-timeline-element-title">Presentations & Award Ceremony</h3>
-                <p>5:00-6:00pm PST</p>
-              </VerticalTimelineElement>
-            </VerticalTimeline>
-            <p className="more-events">More events TBA!</p>
-          </div>
+        <Container className="about-container">
+          <Row className="about-row">
+            <Col xs={12} md={6}>
+              <img src={Earth} alt="Earth" className="earth"/>
+            </Col>
+            <Col xs={12} md={6}>
+              <h3 className="about-title">ICS Student Council at UC Irvine invites you to our 2021 Jam for Change!</h3>
+              <p className="about-text">Jam for Change is five day long development competition where teams work together to create applications that promote social good.</p>
+            </Col>
+          </Row>
+        </Container>
+        <Container className="schedule-container">
+          <h2 className="schedule-title">Event Schedule</h2>
+          <VerticalTimeline className="vertical-timeline">
+            <VerticalTimelineElement
+              className="vertical-timeline-element-one"
+              contentStyle={{ background: '#F62600', color: '#fff', borderRadius: '20px' }}
+              contentArrowStyle={{ borderRight: '8px solid #F62600' }}
+              date="Monday, February 15th"
+              dateClassName='vertical-timeline-date'
+              iconStyle={{ background: '#fff' }}
+            >
+              <h3 className="vertical-timeline-element-title">Kickoff Ceremony</h3>
+              <p>5:00-6:00pm PST</p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="vertical-timeline-element-two"
+              contentStyle={{ background: '#FFA135', color: '#fff', borderRadius: '20px' }}
+              contentArrowStyle={{ borderRight: '8px solid #FFA135' }}
+              date="Friday, February 19th"
+              dateClassName='vertical-timeline-date'
+              iconStyle={{ background: '#fff' }}
+            >
+              <h3 className="vertical-timeline-element-title">Presentations & Award Ceremony</h3>
+              <p>5:00-6:00pm PST</p>
+            </VerticalTimelineElement>
+          </VerticalTimeline>
+          <p className="more-events">More events TBA!</p>
         </Container>
       </div>
       <div className="faq">
