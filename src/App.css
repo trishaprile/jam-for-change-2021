@@ -74,16 +74,46 @@ html, body {
 .left-building {
     width: 100%;
     padding-bottom: 3vw;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .middle-people-anteaters {
     width: 100%;
     padding-bottom: 2vw;
+    animation: 1s ease-out 0s 1 slideInFromBottom;
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .right-building {
     width: 100%;
     padding-bottom: 3vw;
+    animation: 1s ease-out 0s 1 slideInFromRight;
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .landing-text-container {
@@ -93,6 +123,7 @@ html, body {
     margin: auto;
     margin-top: 15vh;
     padding: 0;
+    z-index: 1;
 }
 
 .icssc-logo-header {
@@ -137,6 +168,11 @@ html, body {
     background: rgba(255, 255, 255, 0.8);
     border: none;
     margin-top: 6vh; 
+}
+
+.btn:hover {
+    background: #0080E9;
+    color: white;
 }
 
 .about-container {
@@ -279,7 +315,7 @@ html, body {
 }
 
 .ctc-title {
-    font-size: 24px;
+    font-size: 20px;
     margin-top: -1em;
 }
 
