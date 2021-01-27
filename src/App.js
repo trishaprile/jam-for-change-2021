@@ -15,14 +15,14 @@ import { ChevronRight } from 'react-bootstrap-icons';
 
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 
-import Background from './img/Background.svg';
 import Ground from './img/Ground.svg';
 import LeftBuilding from './img/LeftBuilding.svg';
 import MiddlePeopleAnteaters from './img/MiddlePeopleAnteaters.svg';
 import RightBuilding from './img/RightBuilding.svg';
 import Earth from './img/Earth.svg';
 import ICSSC_Logo from './img/icssc_logo_white.png';
-import CTC_Logo from './img/ctc-logo.svg';
+import CTC_Logo from './img/purple_ctc.png';
+import ZotBins_Logo from './img/zotBins.svg';
 
 function App() {
 
@@ -110,10 +110,10 @@ function App() {
       <div className="info">
         <Container className="about-container">
           <Row className="about-row">
-            <Col xs={12} md={6}>
+            <Col className="earth-col">
               <img src={Earth} alt="Earth" className="earth"/>
             </Col>
-            <Col xs={12} md={6}>
+            <Col className="about-col">
               <h3 className="about-title">ICS Student Council at UC Irvine invites you to our 2021 Jam for Change!</h3>
               <p className="about-text">Jam for Change is five day long development competition where teams work together to create applications that promote social good.</p>
             </Col>
@@ -124,8 +124,8 @@ function App() {
           <VerticalTimeline className="vertical-timeline">
             <VerticalTimelineElement
               className="vertical-timeline-element-one"
-              contentStyle={{ background: '#F62600', color: '#fff', borderRadius: '20px' }}
-              contentArrowStyle={{ borderRight: '8px solid #F62600' }}
+              contentStyle={{ background: 'linear-gradient(-315deg, #ED6327 0%, #EC9F05 80%)', color: '#fff', borderRadius: '20px' }}
+              contentArrowStyle={{ borderRight: '8px solid #EC9F05' }}
               date="Monday, February 15th"
               dateClassName='vertical-timeline-date'
               iconStyle={{ background: '#fff' }}
@@ -135,8 +135,8 @@ function App() {
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element-two"
-              contentStyle={{ background: '#FFA135', color: '#fff', borderRadius: '20px' }}
-              contentArrowStyle={{ borderRight: '8px solid #FFA135' }}
+              contentStyle={{ background: 'linear-gradient(-315deg, #B279A7 0%, #E58C8A 80%)', color: '#fff', borderRadius: '20px' }}
+              contentArrowStyle={{ borderRight: '8px solid #B279A7' }}
               date="Friday, February 19th"
               dateClassName='vertical-timeline-date'
               iconStyle={{ background: '#fff' }}
@@ -295,11 +295,19 @@ function App() {
         </Container>
         <Container className="special-thanks">
           <h2 className="special-thanks-title">Special Thanks To</h2>
-          <a href="https://ctc-uci.com/" target="_blank" rel="noreferrer"><img src={CTC_Logo} alt="commit the change logo" className="ctc-logo"></img></a>
-          <h3 className="ctc-title">Commit the Change</h3>
+          <Row className="special-thanks-row">
+            <Col>
+              <a href="https://ctc-uci.com/" target="_blank" rel="noreferrer"><img src={CTC_Logo} alt="Commit the Change logo" className="ctc-logo"></img></a>
+              <h3 className="special-thanks-name">Commit the Change</h3>
+            </Col>
+            <Col>
+              <a href="https://zotbins.github.io/" target="_blank" rel="noreferrer"><img src={ZotBins_Logo} alt="Zot Bins logo" className="zotbins-logo"></img></a>
+              <h3 className="special-thanks-name">ZotBins</h3>
+            </Col>
+          </Row>
         </Container>
         <footer>
-          <a href="https://studentcouncil.ics.uci.edu/" target="_blank" rel="noreferrer"><img src={ICSSC_Logo} alt="icssc logo" className="icssc-logo-footer"></img></a>
+          <a href="https://studentcouncil.ics.uci.edu/" target="_blank" rel="noreferrer"><img src={ICSSC_Logo} alt="ICSSC logo" className="icssc-logo-footer"></img></a>
           <p>© 2021 ICSSC Projects Committee</p>
         </footer>
       </div>

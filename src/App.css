@@ -33,7 +33,7 @@ html, body {
 .ground-container {
     position: absolute;
     bottom: 0;
-    margin-bottom: -1px;
+    margin-bottom: -3px;
     height: 5vw;
 }
 
@@ -73,7 +73,7 @@ html, body {
 
 .left-building {
     width: 100%;
-    padding-bottom: 3vw;
+    padding-bottom: 2.5vw;
     animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
@@ -118,8 +118,6 @@ html, body {
 
 .landing-text-container {
     text-align: center;
-    animation-duration: 2000ms;
-    animation-name: fadeIn;
     margin: auto;
     margin-top: 15vh;
     padding: 0;
@@ -132,12 +130,16 @@ html, body {
     float: left;
     margin: 0.5em;
     position: absolute;
+    animation-duration: 500ms;
+    animation-name: fadeIn;
 }
 
 .pretitle {
     font-weight: 600;
     font-size: 24px;
     color: white;
+    animation-duration: 1000ms;
+    animation-name: fadeIn;
 }
 
 .main-title {
@@ -146,6 +148,8 @@ html, body {
     padding-top: 1em;
     color: white;
     text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    animation-duration: 2000ms;
+    animation-name: fadeIn;
 }
 
 .dates {
@@ -153,6 +157,8 @@ html, body {
     font-size: 28px;
     padding-top: 1em;
     color: white;
+    animation-duration: 3000ms;
+    animation-name: fadeIn;
 }
 
 .globe-img {
@@ -167,8 +173,27 @@ html, body {
     border-radius: 40px;
     background: rgba(255, 255, 255, 0.8);
     border: none;
-    margin-top: 6vh; 
+    margin-top: 6vh;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both;  
+    -webkit-animation-name: bounce; 
+    animation-name: bounce;
+    animation-delay: 500ms; 
 }
+
+@-webkit-keyframes bounce { 
+    0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
+    40% {-webkit-transform: translateY(-30px);} 
+    60% {-webkit-transform: translateY(-15px);} 
+ } 
+ 
+ @keyframes bounce { 
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+    40% {transform: translateY(-30px);} 
+    60% {transform: translateY(-15px);} 
+ }
 
 .btn:hover {
     background: #0080E9;
@@ -176,8 +201,7 @@ html, body {
 }
 
 .about-container {
-    padding-top: 5em;
-    padding-bottom: 5em;
+    padding: 15vh 1vw 8vw 1vw;
 }
 
 .about-row {
@@ -188,33 +212,49 @@ html, body {
 .about-title {
     font-size: 26px;
     font-weight: 600;
-    padding-bottom: 1em;
+    padding-bottom: 1.5em;
     text-align: left;
+    animation: slideinright 1s forwards;
 }
 
 .about-text {
     font-size: 20px;
     text-align: left;
+    vertical-align: auto;
+    animation: slideinright 1s forwards;
 }
 
 .earth {
-    width: 300px;
+    width: 30vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    animation:slideinleft 1s forwards;
+}
+
+@keyframes slideinleft{
+    0% {transform: translateX(-50%); opacity: 0;}
+    100% {transform: translateX(0%); opacity: 1;}
+}
+
+@keyframes slideinright {
+    0% {transform: translateX(50%); opacity: 0; }
+    100% {transform: translateX(0%);  opacity: 1;}
 }
 
 .schedule-container {
-    padding-top: 5em;
     padding-bottom: 5em;
 }
 
 .schedule-title {
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 600;
-    padding-bottom: 1em;
+    padding-bottom: 2em;
     text-align: center;
 }
 
 .vertical-timeline::before {
-    background: linear-gradient(180deg, #F62600 0%, #FFA135 100%);
+    background: linear-gradient(180deg, #ED6327 0%, #E58C8A 100%);
     width: 6px;
     border-radius: 20px;
 }
@@ -229,11 +269,11 @@ html, body {
 }
 
 .vertical-timeline-element-one .vertical-timeline-element-icon {
-    box-shadow: 0 0 0 6px #F62600, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 0 6px #ED6327, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 
 .vertical-timeline-element-two .vertical-timeline-element-icon {
-    box-shadow: 0 0 0 6px #FFA135, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 0 6px #E58C8A, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 
 .more-events {
@@ -243,17 +283,19 @@ html, body {
 }
 
 .faq {
-    background: linear-gradient(180deg, #49c4e8 0%, #0080E9 100%);
+    background-color: #3eadcf;
+    background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 75%);
     color: white;
 }
 
 .faq-container {
-    padding: 5em 2em;
+    padding: 4em 2em;
 }
 
 .faq-title {
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 600;
+    padding-top: 1em;
     padding-bottom: 1em;
     text-align: center;
     color: white;
@@ -266,7 +308,7 @@ html, body {
     border-radius: 20px;
     animation-duration: 1000ms;
     animation-name: fadeIn;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .chevron-icon {
@@ -281,15 +323,17 @@ html, body {
 }
 
 .faq-card-header {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    border: 0;
 }
 
 .faq-card-header:hover {
     cursor:pointer;
+    background: rgba(255, 255, 255, 0);
 }
 
 .faq-card-body {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
     padding-left: 3em;
 }
 
@@ -299,12 +343,22 @@ html, body {
 }
 
 .special-thanks-title {
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 600;
 }
 
+.special-thanks-row {
+    display: flex;
+    align-items: center;
+}
+
+.special-thanks-name {
+    font-size: 24px;
+    margin-top: -5px;
+}
+
 .ctc-logo {
-    width: 50vh;
+    width: 25vw;
     cursor: pointer; 
     transition:transform 0.5s;
     transform: scale(0.5, 0.5);
@@ -314,30 +368,73 @@ html, body {
     transform: scale(0.6);
 }
 
-.ctc-title {
-    font-size: 20px;
-    margin-top: -1em;
+.zotbins-logo {
+    width: 12vw;
+    cursor: pointer; 
+    transition:transform 0.5s;
+    transform: scale(0.5, 0.5);
+}
+
+.zotbins-logo:hover {
+    transform: scale(0.6);
 }
 
 footer {
     text-align: center;
     padding-bottom: 2em;
+    font-size: 16px;
 }
 
 .icssc-logo-footer {
-    width: 150px;
+    width: 100px;
     height: auto;
     padding-bottom: 1em;
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 768px) {
     .pretitle {
-        font-size: 20px;
+        font-size: 16px;
     }
     .main-title {
-        font-size: 60px;
+        font-size: 48px;
     }
     .dates {
-        font-size: 24px;
+        font-size: 20px;
+    }
+    .left-building {
+        padding-bottom: 0.8vw;
+    }
+    .right-building {
+        padding-bottom: 1vw;
+    }
+    .about-row {
+        flex-direction: column;
+    }
+    .about-col {
+        width: 100vw;
+        text-align: center;
+        padding-top: 3em;
+    }
+    .earth-col {
+        width: 100vw;
+    }
+    .about-title {
+        text-align: center;
+    }
+    .about-text {
+        text-align: center;
+    }
+    .ctc-logo {
+        width: 80vw;
+    }
+    .zotbins-logo {
+        width: 60vw;
+    }
+}
+
+@media (max-width: 1169px) {
+    .vertical-timeline-date {
+        color: white;
+        margin: 0em;
     }
 }
