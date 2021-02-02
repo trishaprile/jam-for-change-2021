@@ -1,6 +1,8 @@
 # ICSSC Jam for Change 2021
 Jam for Change is five day long development competition where teams work together to create applications that promote social good.
 
+Illustrations by Bianca Victoria
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
