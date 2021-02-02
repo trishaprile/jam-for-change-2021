@@ -379,6 +379,17 @@ html, body {
     transform: scale(0.6);
 }
 
+.asuci-logo {
+    width: 30vw;
+    cursor: pointer; 
+    transition:transform 0.5s;
+    transform: scale(0.5, 0.5);
+}
+
+.asuci-logo:hover {
+    transform: scale(0.6);
+}
+
 footer {
     text-align: center;
     padding-bottom: 2em;
@@ -429,6 +440,9 @@ footer {
     }
     .zotbins-logo {
         width: 60vw;
+    }
+    .asuci-logo {
+        width: 90vw;
     }
 }
 

@@ -23,6 +23,8 @@ import Earth from './img/Earth.svg';
 import ICSSC_Logo from './img/icssc_logo_white.png';
 import CTC_Logo from './img/purple_ctc.png';
 import ZotBins_Logo from './img/zotBins.svg';
+import ASUCI_Logo from './img/ASUCI_Logo.png';
+
 
 function App() {
 
@@ -303,6 +305,10 @@ function App() {
             <Col>
               <a href="https://zotbins.github.io/" target="_blank" rel="noreferrer"><img src={ZotBins_Logo} alt="Zot Bins logo" className="zotbins-logo"></img></a>
               <h3 className="special-thanks-name">ZotBins</h3>
+            </Col>
+            <Col>
+              <a href="https://www.asuci.uci.edu/" target="_blank" rel="noreferrer"><img src={ASUCI_Logo} alt="ASUCI logo" className="asuci-logo"></img></a>
+              <h3 className="special-thanks-name">ASUCI</h3>
             </Col>
           </Row>
         </Container>
