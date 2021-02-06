@@ -23,6 +23,8 @@ import Earth from './img/Earth.svg';
 import ICSSC_Logo from './img/icssc_logo_white.png';
 import CTC_Logo from './img/purple_ctc.png';
 import ZotBins_Logo from './img/zotBins.svg';
+import MAISS_Logo from './img/MAISS_Logo.png';
+import Wolfram_Logo from './img/Wolfram_Logo.png';
 import ASUCI_Logo from './img/ASUCI_Logo.png';
 
 
@@ -103,6 +105,9 @@ function App() {
           </h1>
           <h3 className="dates">
             February 15th - 19th, 2021
+          </h3>
+          <h3 className="deadline">
+            Registration closes February 14th @ 11:59 PM PST
           </h3>
           <div className="register-container">
             <a href="https://forms.gle/VogasEdHYQsn7QYT6" target="_blank" rel="noreferrer"><Button className="btn">REGISTER NOW!</Button></a>
@@ -305,6 +310,14 @@ function App() {
             <Col>
               <a href="https://zotbins.github.io/" target="_blank" rel="noreferrer"><img src={ZotBins_Logo} alt="Zot Bins logo" className="zotbins-logo"></img></a>
               <h3 className="special-thanks-name">ZotBins</h3>
+            </Col>
+            <Col>
+              <a href="http://www.maissuci.com/" target="_blank" rel="noreferrer"><img src={MAISS_Logo} alt="MAISS logo" className="maiss-logo"></img></a>
+              <h3 className="special-thanks-name">MAISS</h3>
+            </Col>
+            <Col>
+              <a href="https://www.wolfram.com/" target="_blank" rel="noreferrer"><img src={Wolfram_Logo} alt="Wolfram logo" className="wolfram-logo"></img></a>
+              <h3 className="special-thanks-name">Wolfram</h3>
             </Col>
             <Col>
               <a href="https://www.asuci.uci.edu/" target="_blank" rel="noreferrer"><img src={ASUCI_Logo} alt="ASUCI logo" className="asuci-logo"></img></a>
