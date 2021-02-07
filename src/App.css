@@ -251,7 +251,7 @@ html, body {
 }
 
 .schedule-container {
-    padding-bottom: 5em;
+    padding-bottom: 10rem;
 }
 
 .schedule-title {
@@ -262,7 +262,7 @@ html, body {
 }
 
 .vertical-timeline::before {
-    background: linear-gradient(180deg, #ED6327 0%, #E58C8A 100%);
+    background: linear-gradient(180deg, #F62600 0%, #FF8F3F 21.35%, #F6D365 44.27%, #49C839 65.62%, #44B2F0 84.37%);
     width: 6px;
     border-radius: 20px;
 }
@@ -271,23 +271,38 @@ html, body {
     font-size: 26px;
 }
 
+.vertical-timeline-element-subtitle {
+    font-size: 18px;
+    padding-top: 1rem;
+}
+
+.vertical-timeline-element-time {
+    font-size: 20px;
+}
+
 .vertical-timeline-date {
     color: #212529;
     margin: 0em 2em;
 }
 
 .vertical-timeline-element-one .vertical-timeline-element-icon {
-    box-shadow: 0 0 0 6px #ED6327, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 0 6px #F62600, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 
 .vertical-timeline-element-two .vertical-timeline-element-icon {
-    box-shadow: 0 0 0 6px #E58C8A, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 0 6px #FF8F3F, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 
-.more-events {
-    font-size: 16px;
-    padding-top: 3em;
-    text-align: center;
+.vertical-timeline-element-three .vertical-timeline-element-icon {
+    box-shadow: 0 0 0 6px #F6D365, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.vertical-timeline-element-four .vertical-timeline-element-icon {
+    box-shadow: 0 0 0 6px #49C839, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.vertical-timeline-element-five .vertical-timeline-element-icon {
+    box-shadow: 0 0 0 6px #44B2F0, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 
 .faq {
@@ -468,15 +483,6 @@ footer {
     }
     .about-text {
         text-align: center;
-    }
-    .ctc-logo {
-        width: 80vw;
-    }
-    .zotbins-logo {
-        width: 60vw;
-    }
-    .asuci-logo {
-        width: 90vw;
     }
 }
 

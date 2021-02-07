@@ -131,28 +131,65 @@ function App() {
           <VerticalTimeline className="vertical-timeline">
             <VerticalTimelineElement
               className="vertical-timeline-element-one"
-              contentStyle={{ background: 'linear-gradient(-315deg, #ED6327 0%, #EC9F05 80%)', color: '#fff', borderRadius: '20px' }}
-              contentArrowStyle={{ borderRight: '8px solid #EC9F05' }}
+              contentStyle={{ background: 'linear-gradient(-315deg, #F62600 0%, #FF8F3F 80%)', color: '#fff', borderRadius: '20px' }}
+              contentArrowStyle={{ borderRight: '8px solid #FF8F3F' }}
               date="Monday, February 15th"
               dateClassName='vertical-timeline-date'
               iconStyle={{ background: '#fff' }}
             >
               <h3 className="vertical-timeline-element-title">Kickoff Ceremony</h3>
-              <p>5:00-6:00pm PST</p>
+              <h4 className="vertical-timeline-element-subtitle">ICSSC</h4>
+              <p className="vertical-timeline-element-time">5:00-6:00pm PST</p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element-two"
-              contentStyle={{ background: 'linear-gradient(-315deg, #B279A7 0%, #E58C8A 80%)', color: '#fff', borderRadius: '20px' }}
-              contentArrowStyle={{ borderRight: '8px solid #B279A7' }}
+              contentStyle={{ background: 'linear-gradient(-315deg, #FF8F3F 0%, #FFC93F 80%)', color: '#fff', borderRadius: '20px' }}
+              contentArrowStyle={{ borderRight: '8px solid #FF8F3F' }}
+              date="Monday, February 15th"
+              dateClassName='vertical-timeline-date'
+              iconStyle={{ background: '#fff' }}
+            >
+              <h3 className="vertical-timeline-element-title">iOS Workshop</h3>
+              <h4 className="vertical-timeline-element-subtitle">Commit the Change</h4>
+              <p className="vertical-timeline-element-time">7:00-9:00pm PST</p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="vertical-timeline-element-three"
+              contentStyle={{ background: 'linear-gradient(-315deg, #F6D365 0%, #FFE418 80%)', color: '#fff', borderRadius: '20px' }}
+              contentArrowStyle={{ borderRight: '8px solid #FFE418' }}
+              date="Tuesday, February 16th"
+              dateClassName='vertical-timeline-date'
+              iconStyle={{ background: '#fff' }}
+            >
+              <h3 className="vertical-timeline-element-title">Intro to React</h3>
+              <h4 className="vertical-timeline-element-subtitle">MAISS</h4>
+              <p className="vertical-timeline-element-time">6:00-7:00pm PST</p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="vertical-timeline-element-four"
+              contentStyle={{ background: 'linear-gradient(-315deg, #49C839 0%, #39C883 80%)', color: '#fff', borderRadius: '20px' }}
+              contentArrowStyle={{ borderRight: '8px solid #49C839' }}
+              date="Tuesday, February 16th"
+              dateClassName='vertical-timeline-date'
+              iconStyle={{ background: '#fff' }}
+            >
+              <h3 className="vertical-timeline-element-title">Backend Workshop</h3>
+              <h4 className="vertical-timeline-element-subtitle">Commit the Change</h4>
+              <p className="vertical-timeline-element-time">8:00-10:00pm PST</p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="vertical-timeline-element-five"
+              contentStyle={{ background: 'linear-gradient(-315deg, #8745F1 0%, #44B2F0 80%)', color: '#fff', borderRadius: '20px' }}
+              contentArrowStyle={{ borderRight: '8px solid #44B2F0' }}
               date="Friday, February 19th"
               dateClassName='vertical-timeline-date'
               iconStyle={{ background: '#fff' }}
             >
               <h3 className="vertical-timeline-element-title">Presentations & Award Ceremony</h3>
-              <p>5:00-6:00pm PST</p>
+              <h4 className="vertical-timeline-element-subtitle">ICSSC</h4>
+              <p className="vertical-timeline-element-time">5:00-6:00pm PST</p>
             </VerticalTimelineElement>
           </VerticalTimeline>
-          <p className="more-events">More events TBA!</p>
         </Container>
       </div>
       <div className="faq">
