@@ -377,7 +377,6 @@ html, body {
 
 .special-thanks-name {
     font-size: 24px;
-    margin-top: -5px;
     padding-bottom: 5rem;
 }
 
@@ -423,6 +422,23 @@ html, body {
 
 .wolfram-logo:hover {
     transform: scale(0.6);
+}
+
+.deloitte-logo {
+    height: 10vh;
+    cursor: pointer; 
+    transition:transform 0.5s;
+    transform: scale(0.5, 0.5);
+}
+
+.deloitte-logo:hover {
+    transform: scale(0.6);
+}
+
+.deloitte {
+    font-size: 24px;
+    padding-bottom: 5rem;
+    margin-top: 4rem;
 }
 
 .asuci-logo {

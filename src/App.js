@@ -25,6 +25,7 @@ import CTC_Logo from './img/purple_ctc.png';
 import ZotBins_Logo from './img/zotBins.svg';
 import MAISS_Logo from './img/MAISS_Logo.png';
 import Wolfram_Logo from './img/Wolfram_Logo.png';
+import Deloitte_Logo from './img/Deloitte_Logo.svg';
 import ASUCI_Logo from './img/ASUCI_Logo.png';
 
 
@@ -355,6 +356,10 @@ function App() {
             <Col>
               <a href="https://www.wolfram.com/" target="_blank" rel="noreferrer"><img src={Wolfram_Logo} alt="Wolfram logo" className="wolfram-logo"></img></a>
               <h3 className="special-thanks-name">Wolfram</h3>
+            </Col>
+            <Col>
+              <a href="https://www2.deloitte.com/" target="_blank" rel="noreferrer"><img src={Deloitte_Logo} alt="Deloitte logo" className="deloitte-logo"></img></a>
+              <h3 className="deloitte">Deloitte</h3>
             </Col>
             <Col>
               <a href="https://www.asuci.uci.edu/" target="_blank" rel="noreferrer"><img src={ASUCI_Logo} alt="ASUCI logo" className="asuci-logo"></img></a>
